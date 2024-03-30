@@ -32,3 +32,15 @@ If you want to contact me you can reach me at vinodkr8833@gmail.com
 
 MIT
 # vinod8833.github.io
+
+``
+    git status
+    git add --all
+    git commit -m "add"
+    git push -u origin main
+
+``
+    #or
+``
+    git push -f 
+``
