@@ -1880,3 +1880,35 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+
+
+.sidebar-info {
+  text-align: center;
+}
+
+.info-content {
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 768px) {
+  .sidebar-info {
+    text-align: left;
+  }
+
+  .info-content {
+    text-align: left;
+  }
+
+  .btn-container {
+    display: block;
+    text-align: center;
+  }
+}
