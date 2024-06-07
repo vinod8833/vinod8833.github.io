@@ -3,18 +3,6 @@
 \*-----------------------------------*/
 
 
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
 
   /**
@@ -53,6 +41,7 @@
     hsl(45, 100%, 72%), 
     hsl(35, 100%, 68%)
   );
+  
 
   /* solid */
 
@@ -1912,3 +1901,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 }
+
+
+
+
+
+
