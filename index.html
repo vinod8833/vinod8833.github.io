@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
   <title>Personal Portfolio</title>
 
   <!--
@@ -22,113 +24,6 @@
 </head>
 
 <body>
-  <style>
-    .btn-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .btn {
-      background-color: hsl(45, 100%, 71%);
-      background-image: linear-gradient(145deg, hsl(45, 100%, 75%), hsl(45, 100%, 67%));
-      color: #fff;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 30px;
-      font-size: 18px;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .btn:hover {
-      background-color: hsl(45, 100%, 65%);
-      background-image: linear-gradient(145deg, hsl(45, 100%, 69%), hsl(45, 100%, 61%));
-      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
-      transform: translateY(-3px);
-    }
-    .btn:active {
-      background-color: hsl(45, 100%, 61%);
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-      transform: translateY(0);
-    }
-    .btn::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 300%;
-      height: 300%;
-      background: rgba(255, 255, 255, 0.15);
-      transform: translate(-50%, -50%) rotate(45deg);
-      transition: all 0.75s ease;
-    }
-    .btn:hover::before {
-      width: 0;
-      height: 0;
-    }
-    .btn .title {
-      margin: 0;
-    }
-
-/*photo*/ 
-    .avatar-box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 10px;
-      background-color: #fff;
-      border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-  }
-
-  .avatar-box:hover {
-      transform: translateY(-5px);
-  }
-
-  .frame {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 192px; 
-      height: 192px; 
-      border-radius: 50%;
-      background: linear-gradient(135deg, #ff4081, #81d4fa);
-      padding: 5px;
-      margin-bottom: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s, transform 0.3s;
-  }
-
-  .avatar-box:hover .frame {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-      transform: rotate(5deg);
-  }
-
-  .avatar {
-      width: 186px; 
-      height: 186px;
-      border-radius: 50%;
-      border: 3px solid #fff;
-      object-fit: cover;
-      object-position: center;
-  }
-
-  figcaption {
-      font-size: 20px;
-      color: white;
-      font-weight: bold;
-  }
-  </style>
-
   <main>
 
     <!--
@@ -136,129 +31,103 @@
     -->
 
     <aside class="sidebar" data-sidebar>
-
-<div class="sidebar-info" style="text-align: center;">
-
-      <figure class="avatar-box">
-        <div class="frame">
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <div class="frame">
             <img src="./assets/images/photo_2024-07-19_16-12-31.jpg" alt="K Vinod Kumar" class="avatar">
-        </div>
-        <figcaption>K Vinod Kumar</figcaption>
-    </figure>
-    
+          </div>
+        </figure>
+        <h1>K Vinod Kumar</h1>
 
-        <div class="info-content" style="text-align: center;">
-          <h5 class="title" style="text-align: center; color: hsl(45, 100%, 71%); font-size: 1.7em; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); font-family: 'Arial', sans-serif; margin-top: 10px;">Frontend Developer</h5>
+    
+        <div class="info-content">
+          <h5 class="titl5e">Frontend Developer</h5>
           <div class="btn-container">
             <a class="btn btn-color-2" href="./assets/images/vinod Corporate Resume.pdf">
-              <p class="title">Download CV</p>            
+              <h3 class="title">Download CV</h3>            
             </a>
           </div>
-        
-        <!-- Social Links -->
-        <div class="separator"></div>
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://www.facebook.com/share/yjhJrVRZdqwbRDtw/?mibextid=qi2Omg" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/vinod8833" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://api.whatsapp.com/send?phone=7606945133&text=" class="social-link">
-              <ion-icon name="logo-whatsapp"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://www.instagram.com/vinod_8833?igsh=MXV0eHNiNm85em54Zg==" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="www.linkedin.com/in/k-vinod-kumar-686738266" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-        
+          
+          <!-- Social Links -->
+          <div class="separator"></div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.facebook.com/share/yjhJrVRZdqwbRDtw/?mibextid=qi2Omg" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/vinod8833" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://api.whatsapp.com/send?phone=7606945133&text=" class="social-link">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.instagram.com/vinod_8833?igsh=MXV0eHNiNm85em54Zg==" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/k-vinod-kumar-686738266" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+    
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
-
           <ion-icon name="chevron-down"></ion-icon>
         </button>
-
       </div>
-
+    
       <div class="sidebar-info_more">
-
         <div class="separator"></div>
-
         <ul class="contacts-list">
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:vinodkr8833@gmail.com" class="contact-link">vinodkr8833@gmail.com</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Phone</p>
-
               <a href="tel:+91-7606945133" class="contact-link">+91-7606945133</a>
             </div>
-
           </li>
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Birthday</p>
-
-              <time datetime="2003-10-15">october 15, 2003</time>
+              <time datetime="2003-10-15">October 15, 2003</time>
             </div>
-
           </li>
-
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>Berhampur, Odisha, India</address>
             </div>
-
           </li>
-
         </ul>
-  </aside>
+      </div>
+    </aside>
+    
 
 
 
@@ -439,7 +308,6 @@ with industry trends and incorporate emerging technologies into practical soluti
         <section class="ACHIEVEMENTS">
             
           <h3 class="h3 ACHIEVEMENTS-title">ACHIEVEMENTS</h3>
-
           <ul class="clients-list has-scrollbar">
 
             <li class="clients-item">
@@ -497,9 +365,9 @@ with industry trends and incorporate emerging technologies into practical soluti
 
 
 
-      <!--
-        - #RESUME
-      -->
+      
+        <!-- - #RESUME -->
+     
 
       <article class="resume" data-page="resume">
 
@@ -617,122 +485,70 @@ with industry trends and incorporate emerging technologies into practical soluti
           </ol>
         </section>
 
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Web_Design</h5>
-                  <data value="80">(80%)</data>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 80%;"></div>
-                  </div>
-                  </div>
-            </li>
-            
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">UX/UI_Design</h5>              
-                  <data value="70">(70%)</data>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 70%;"></div>
-                  </div>
-              </div>
-            </li>
 
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Flask</h5>              
-                  <data value="75">(75%)</data>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 75%;"></div>
-                  </div>
-              </div>
-            </li>
+       
+        <section class="custom-skill-section">
+          <h3 class="custom-skills-title">My Skills</h3>
+          <ul class="custom-skills-list">
+            <ul class="custom-clients-list custom-has-scrollbar">
+              <li class="custom-clients-item">
+                <a href="./assets/images/html_original.png">
+                  <img src="./assets/images/html_original.png" alt="HTML logo">
+                </a>
+              </li>
 
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Django</h5>              
-                  <data value="65">(65%)</data>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 65%;"></div>
-                  </div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">React</h5>              
-                  <data value="77">(77%)</data>
-                  <div class="skill-progress-bg">
-                    <div class="skill-progress-fill" style="width: 77%;"></div>
-                  </div>
-              </div>
-            </li>
-            
-
-            
-                <ul class="clients-list has-scrollbar">
-      
-                  <li class="clients-item">
-                    <a href="./assets/images/html_original.png">
-                      <img src="./assets/images/html_original.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="clients-item">
-                    <a href="./assets/images/css_plain_.png">
+                   
+              <li class="custom-clients-item">
+                <a href="./assets/images/css_plain_.png">
                       <img src="./assets/images/css_plain_.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/file_type_js.png">
                       <img src="./assets/images/file_type_js.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/node-js-736399_1280.png">
                       <img src="./assets/images/node-js-736399_1280.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/react_original.png">
                       <img src="./assets/images/react_original.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/file_type_django_icon_130645.png">
                       <img src="./assets/images/file_type_django_icon_130645.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/python.png">
                       <img src="./assets/images/python.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/file_type_sql_130152.png">
                       <img src="./assets/images/file_type_sql_130152.png" alt="client logo">
                     </a>
                   </li>
                   
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/figma_logo_icon_170157.png">
                       <img src="./assets/images/figma_logo_icon_170157.png" alt="client logo">
                     </a>
                   </li>
       
-                  <li class="clients-item">
+                  <li class="custom-clients-item">
                     <a href="./assets/images/postman_.png">
                       <img src="./assets/images/postman_.png" alt="client logo">
                     </a>
@@ -1080,7 +896,6 @@ with industry trends and incorporate emerging technologies into practical soluti
   
                 </a>
 
-
             </li>
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="https://github.com/vinod8833/Django_MusicPlayer">
@@ -1280,40 +1095,48 @@ with industry trends and incorporate emerging technologies into practical soluti
   <!-- mail -->
 
 <script>
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const fullName = document.getElementById('fullName').value;
-    const emailAddress = document.getElementById('emailAddress').value;
-    const message = document.getElementById('message').value;
-
-    const statusMessage = document.getElementById('statusMessage');
-
-    // EmailJS init
-    emailjs.init("vinodkr8833@gmail.com");
-
-    const templateParams = {
-        fullName: fullName,
-        emailAddress: emailAddress,
-        message: message,
-    };
-
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
-        .then(function(response) {
-            statusMessage.textContent = 'Message sent successfully!';
-            statusMessage.style.color = 'green';
-        }, function(error) {
-            statusMessage.textContent = 'Failed to send message. Please try again.';
-            statusMessage.style.color = 'red';
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('[data-filter-btn]');
+    const projects = document.querySelectorAll('[data-filter-item]');
+  
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove 'active' class from all filter buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        
+        const filterValue = button.textContent.trim().toLowerCase();
+        
+        // Show or hide projects based on the filter value
+        projects.forEach(project => {
+          const category = project.getAttribute('data-category').toLowerCase();
+          if (filterValue === 'all' || filterValue === category) {
+            project.style.display = 'block';
+          } else {
+            project.style.display = 'none';
+          }
         });
-});
-
-</script>
-
+      });
+    });
+  });
   
 
-  <!-- wevwef -->
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const sidebarBtn = document.querySelector('[data-sidebar-btn]');
+    const sidebarInfoMore = document.querySelector('.sidebar-info_more');
+  
+    sidebarBtn.addEventListener('click', function () {
+      if (sidebarInfoMore.style.display === 'block') {
+        sidebarInfoMore.style.display = 'none';
+        sidebarBtn.innerHTML = `<span>Show Contacts</span><ion-icon name="chevron-down"></ion-icon>`;
+      } else {
+        sidebarInfoMore.style.display = 'block';
+        sidebarBtn.innerHTML = `<span>Hide Contacts</span><ion-icon name="chevron-up"></ion-icon>`;
+      }
+    });
+  });
+  
+</script>
 </body>
-
 </html>
