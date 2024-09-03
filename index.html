@@ -135,36 +135,26 @@
 
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
+      <!-- #NAVBAR -->
       <nav class="navbar">
-
+        <button class="navbar-toggle">☰</button> <!-- Toggle Button for Mobile -->
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link active" data-nav-link>About</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Project</button>
-          </li>          
-
+          </li>
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Photography</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
         </ul>
-
       </nav>
 
 
@@ -1131,6 +1121,39 @@ with industry trends and incorporate emerging technologies into practical soluti
       }
     });
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.querySelector('.navbar-toggle');
+    const navbarList = document.querySelector('.navbar-list');
+    const navbarLinks = document.querySelectorAll('.navbar-link');
+    
+    // Toggle navbar list visibility
+    toggleButton.addEventListener('click', () => {
+      navbarList.classList.toggle('active');
+    });
+  
+    // Handle button clicks
+    navbarLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Check if the clicked button is already active
+        if (link.classList.contains('active')) {
+          // If active, show all buttons
+          navbarList.classList.add('active');
+          navbarLinks.forEach(btn => btn.classList.remove('active'));
+        } else {
+          // Otherwise, hide other buttons and show only the clicked one
+          navbarLinks.forEach(btn => {
+            btn.classList.remove('active');
+            btn.style.display = 'none'; // Hide all buttons
+          });
+          link.classList.add('active');
+          navbarList.classList.remove('active'); // Hide the navbar list
+        }
+      });
+    });
+  });
+  
   
 </script>
 </body>
