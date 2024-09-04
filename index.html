@@ -27,6 +27,10 @@
 
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
+
+
+
+
         <figure class="avatar-box">
           <div class="frame">
             <img src="./assets/images/photo_2024-07-19_16-12-31.jpg" alt="K Vinod Kumar" class="avatar">
@@ -38,7 +42,7 @@
         <div class="info-content">
           <h5 class="titl5e">Frontend Developer</h5>
           <div class="btn-container">
-            <a class="btn btn-color-2" href="./assets/images/vinod Corporate Resume.pdf">
+            <a class="btn btn-color-2" href="./assets/images/Resume .pdf">
               <h3 class="title">Download CV</h3>            
             </a>
           </div>
@@ -149,11 +153,10 @@
             <button class="navbar-link" data-nav-link>Project</button>
           </li>
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Photography</button>
-          </li>
-          <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+
+          
         </ul>
       </nav>
 
@@ -244,23 +247,7 @@ with industry trends and incorporate emerging technologies into practical soluti
 
             </li>
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
+            
 
         </section>
         
@@ -271,7 +258,7 @@ with industry trends and incorporate emerging technologies into practical soluti
           <section class="testimonials-modal">
 
             <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
+              <!-- <ion-icon name="close-outline"></ion-icon> -->
             </button>
 
             <div class="modal-img-wrapper">
@@ -982,33 +969,7 @@ with industry trends and incorporate emerging technologies into practical soluti
       </article>
 
 
-<!-- #PHOTOGRAPHY -->
-<article class="photography" data-page="photography">
-  <header>
-    <h2 class="h2 article-title">Photography</h2>
-  </header>
 
-  <section class="photo-gallery">
-    <figure class="photo">
-      <a href="./assets/images/download.jpeg">
-      <img src="./assets/images/download.jpeg" alt="First Image">
-    </a>
-      <figcaption>Caption for the first image</figcaption>
-    </figure>
-    
-    <figure class="photo">
-      <a href="./assets/images/download.jpeg">
-      <img src="./assets/images/download.jpeg" alt="First Image">
-    </a>
-      <figcaption>Caption for the first image</figcaption>
-    </figure><figure class="photo">
-      <a href="./assets/images/download.jpeg">
-      <img src="./assets/images/download.jpeg" alt="First Image">
-    </a>
-      <figcaption>Caption for the first image</figcaption>
-    </figure>
-  </section>
-</article>
 
 
       <!--
@@ -1123,15 +1084,21 @@ with industry trends and incorporate emerging technologies into practical soluti
   });
 
 
+  
+
+
+
+
+
+
   document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.querySelector('.navbar-toggle');
     const navbarList = document.querySelector('.navbar-list');
     const navbarLinks = document.querySelectorAll('.navbar-link');
   
-    // Toggle navbar list visibility
+    // Toggle navbar list visibility for mobile view
     toggleButton.addEventListener('click', () => {
       navbarList.classList.toggle('active');
-      // Reset button display when toggling the menu
       if (navbarList.classList.contains('active')) {
         navbarLinks.forEach(btn => {
           btn.style.display = 'inline'; // Show all buttons
@@ -1142,18 +1109,49 @@ with industry trends and incorporate emerging technologies into practical soluti
     // Handle button clicks
     navbarLinks.forEach(link => {
       link.addEventListener('click', () => {
-        // Hide other buttons and show only the clicked one
-        navbarLinks.forEach(btn => {
-          btn.classList.remove('active');
-          btn.style.display = 'none'; // Hide all buttons
-        });
-        link.classList.add('active');
-        navbarList.classList.remove('active'); // Hide the navbar list 
+        // In mobile view, hide other buttons and show only the clicked one
+        if (window.innerWidth <= 768) { // Adjust this value as per your design
+          navbarLinks.forEach(btn => {
+            btn.style.display = 'none'; // Hide all buttons
+          });
+          link.style.display = 'inline'; // Show only the clicked button
+          navbarList.classList.remove('active'); // Hide the navbar list
+        }
       });
     });
+  
+    // Ensure that the navbar is reset on window resize (for responsive behavior)
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) { // Adjust this value as per your design
+        navbarLinks.forEach(btn => {
+          btn.style.display = 'inline'; // Show all buttons on desktop
+        });
+        navbarList.classList.remove('active'); // Always show navbar list on desktop
+      } else {
+        navbarList.classList.remove('active'); // Ensure list is hidden initially on mobile
+      }
+    });
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  
+   
+
+
 </script>
 </body>
 </html>
