@@ -22,46 +22,46 @@ img {
 
 /* Name (h1) Styles */
 h1 {
-  font-size: 1.4em; /* Large font size for prominence */
-  font-weight: 600; /* Semi-bold weight for emphasis */
-  color: #2c3e50; /* Dark navy color for a sophisticated look */
-  font-family: 'Poppins', sans-serif; /* Modern and clean font */
-  text-align: center; /* Center-align the text */
-  margin: 20px 0; /* Spacing above and below */
-  text-transform: uppercase; /* Uppercase text for strong impact */
-  letter-spacing: 2px; /* Increased letter spacing for a clean look */
-  line-height: 1.2; /* Line height for readability */
-  background: linear-gradient(to right, #d40a3c, #e05d12); /* Gradient background for text */
-  -webkit-background-clip: text; /* Clip background to text */
-  -webkit-text-fill-color: transparent; /* Make text color transparent for gradient effect */
-  padding: 10px; /* Padding around the text for spacing */
-  border-radius: 4px; /* Slightly rounded corners for a soft look */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+  font-size: 1.4em; 
+  font-weight: 600; 
+  color: #2c3e50; 
+  font-family: 'Poppins', sans-serif; 
+  text-align: center; 
+  margin: 20px 0; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  line-height: 1.2; 
+  background: linear-gradient(to right, #d40a3c, #e05d12);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  padding: 10px; 
+  border-radius: 4px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 
 
 /* Job Title (h5) Styles */
 .titl5e {
-  margin: 0; /* Remove default margin */
-  color: #555; /* Dark gray color for text */
-  font-size: 1.2em; /* Slightly larger than standard text size */
-  font-weight: 350; /* Semi-bold for emphasis */
-  font-family: 'Roboto', sans-serif; /* Clean, modern font */
-  text-align: center; /* Center the text */
-  text-transform: uppercase; /* Uppercase for emphasis */
-  letter-spacing: 1px; /* Slight spacing between letters */
-  line-height: 1.4; /* Line height for readability */
-  margin-top: 10px; /* Space above the title */
-  margin-bottom: 20px; /* Space below the title */
-  background: linear-gradient(135deg, #f39907, #f50a6c); /* Gradient background */
-  -webkit-background-clip: text; /* Clip background to text */
-  -webkit-text-fill-color: transparent; /* Make text fill color transparent for gradient effect */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-  padding: 8px 12px; /* Padding for spacing around text */
-  border-radius: 4px; /* Rounded corners for a modern look */
-  border: 1px solid #ddd; /* Light border for definition */
-  display: inline-block; /* Ensures proper alignment with padding and border */
+  margin: 0; 
+  color: #555; 
+  font-size: 1.4em; 
+  font-weight: 350; 
+  font-family: 'Roboto', sans-serif; 
+  text-align: center; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  line-height: 1.4; 
+  margin-top: 10px; 
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #0b3d91, #127382, #6e0276, #ff6700);
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); 
+  padding: 8px 12px; 
+  border-radius: 4px; 
+  border: 1px solid #ddd; 
+  display: inline-block; 
 }
 
 
@@ -72,83 +72,82 @@ h1 {
   left: 0;
   width: 300px;
   height: 100%;
-  background: #2c3e50; /* Dark background */
-  color: #8ac2cf; /* Light text color */
+  background: #2c3e50; 
+  color: #8ac2cf;
   padding: 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
-  overflow-y: auto; /* Scrollable content if it overflows */
-  z-index: 1000; /* Ensure it's on top of other content */
+  overflow-y: auto; 
+  z-index: 1000; 
 }
 
 
 /* Sidebar Container */
 .sidebar {
-  position: fixed; /* Fixed position to stay on the screen */
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 280px; /* Fixed width for sidebar */
-  background-color: #fcf7cc; /* Light background for the sidebar */
-  color: #333; /* Dark text color */
-  padding: 20px; /* Padding inside the sidebar */
-  overflow-y: auto; /* Allow vertical scrolling if needed */
-  border-radius: 0 15px 15px 0; /* Rounded corners on the right */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  width: 280px; 
+  background-color: #fcf7cc; 
+  color: #333;
+  padding: 20px; 
+  overflow-y: auto; 
+  border-radius: 0 15px 15px 0; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Sidebar Info */
 /* Sidebar Info */
 .sidebar-info {
   text-align: center;
 }
 
 .avatar-box {
-  margin-bottom: 30px; /* Increased spacing below the avatar */
+  margin-bottom: 30px; 
 }
 .frame {
-  display: inline-block; /* Align the frame with the avatar */
+  display: inline-block; 
 }
 
 /* Avatar Styles */
 .avatar {
-  width: 150px; /* Fixed width for the avatar */
-  height: 150px; /* Fixed height for the avatar */
-  border-radius: 50%; /* Circular shape */
-  border: 6px solid #007bff; /* Accent color for border */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  object-fit: cover; /* Ensures the image covers the circle */
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  border: 6px solid #007bff; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+  object-fit: cover; 
 }
 
 /* Main Heading (h1) Styles */
 h2 {
-  margin: 0; /* Remove default margin */
-  color: #333; /* Dark color for readability */
-  font-size: 2em; /* Large font size for prominence */
-  font-weight: 700; /* Semi-bold for a balanced look */
-  font-family: 'Poppins', sans-serif; /* Modern, clean font */
-  text-align: center; /* Center the text */
-  text-transform: uppercase; /* Uppercase for emphasis */
-  letter-spacing: 1.5px; /* Spacing between letters */
-  line-height: 1.2; /* Adjust line height for readability */
-  margin-top: 30px; /* Space above the heading */
-  margin-bottom: 30px; /* Space below the heading */
-  background: linear-gradient(135deg, #3498db, #2ecc71); /* Gradient background for effect */
-  -webkit-background-clip: text; /* Clip background to text */
-  -webkit-text-fill-color: transparent; /* Make text fill color transparent for gradient effect */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  padding: 10px 20px; /* Padding for spacing around text */
-  border-radius: 8px; /* Rounded corners for modern look */
-  border: 2px solid transparent; /* Transparent border to ensure padding visibility */
-  display: inline-block; /* Aligns the heading correctly with padding and border */
+  margin: 0; 
+  color: #333; 
+  font-size: 2em;
+  font-weight: 700; 
+  font-family: 'Poppins', sans-serif; 
+  text-align: center; 
+  text-transform: uppercase;
+  letter-spacing: 1.5px; 
+  line-height: 1.2; 
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  background: linear-gradient(135deg, #3498db, #2ecc71); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  padding: 10px 20px; 
+  border-radius: 8px; 
+  border: 2px solid transparent; 
+  display: inline-block; 
 }
 
 /* Figcaption Styles */
 figcaption {
-  margin-top: 15px; /* Spacing above the name */
-  color: #333; /* Dark text color for readability */
-  font-size: 1.5em; /* Larger font size for emphasis */
-  font-weight: 700; /* Bold font weight for prominence */
-  font-family: 'Poppins', sans-serif; /* Modern font choice */
+  margin-top: 15px; 
+  color: #333; 
+  font-size: 1.5em; 
+  font-weight: 700; 
+  font-family: 'Poppins', sans-serif; 
   text-transform: uppercase; /* Uppercase for a stylish look */
   letter-spacing: 1px; /* Slight spacing between letters */
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -533,11 +532,11 @@ article.active {
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: linear-gradient(135deg, #00bfff, #ff6347);
   border-radius: 8px; 
-  border: 2px solid #ffffff; 
+  border: 2px solid #f8cdcd; 
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: linear-gradient(135deg, #f0f8ff, #e6e6e6); 
+  background: linear-gradient(135deg, #cce2f5, #b5f7db); 
   border-radius: 8px; 
 }
 
@@ -548,6 +547,8 @@ article.active {
 .has-scrollbar::-webkit-scrollbar-thumb:active {
   background: linear-gradient(135deg, #4682b4, #ff0000); 
 }
+
+  
 
 
 
@@ -728,29 +729,6 @@ article.active {
     display: none; /* Hide toggle button on larger screens */
   }
 }
-
-
-
-/* Resume section */
-/* .timeline {
-  margin-bottom: 30px;
-}
-
-.timeline-list {
-  list-style: none;
-  padding: 0;
-}
-
-.timeline-item {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 15px;
-  padding: 15px;
-} */
-
-
-
 
 
 
