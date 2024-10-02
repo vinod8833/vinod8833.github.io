@@ -1280,7 +1280,78 @@ figcaption {
 
 
 
+.communication-skills {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
 
+.section-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 60px;
+  background-color: #007BFF;
+  margin: 2px auto 0;
+  border-radius: 10px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Language Card Styles */
+.language-card {
+  padding: 20px;
+  border-radius: 20px;
+  color: black;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  transition: transform 0.8s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.language-card:hover {
+  transform: translateY(-5px);
+}
+
+.language-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.language-card p {
+  font-size: 1em;
+}
+
+.english {
+  background-color: #4098f7; 
+}
+
+.telugu {
+  background-color: #40c05e; 
+}
+
+.hindi {
+  background-color: #FFC107; 
+}
+
+.odia {
+  background-color: #f39649; 
+}
 
 
 
