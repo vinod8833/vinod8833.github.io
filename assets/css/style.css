@@ -1,11 +1,9 @@
-/*Basic resets */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body */
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #82abec;
@@ -20,7 +18,6 @@ img {
 }
 
 
-/* Name (h1) Styles */
 h1 {
   font-size: 1.4em; 
   font-weight: 600; 
@@ -40,8 +37,6 @@ h1 {
 }
 
 
-
-/* Job Title (h5) Styles */
 .titl5e {
   margin: 0; 
   color: #555; 
@@ -51,7 +46,7 @@ h1 {
   text-align: center; 
   text-transform: uppercase; 
   letter-spacing: 1px; 
-  line-height: 1.4; 
+  line-height: 1.2; 
   margin-top: 10px; 
   margin-bottom: 20px;
   background: linear-gradient(135deg, #0b3d91, #127382, #6e0276, #ff6700);
@@ -65,7 +60,6 @@ h1 {
 }
 
 
-/* Sidebar Style */
 .sidebar {
   position: fixed;
   top: 0;
@@ -81,7 +75,6 @@ h1 {
 }
 
 
-/* Sidebar Container */
 .sidebar {
   position: fixed;
   top: 0;
@@ -96,7 +89,6 @@ h1 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Sidebar Info */
 .sidebar-info {
   text-align: center;
 }
@@ -108,17 +100,15 @@ h1 {
   display: inline-block; 
 }
 
-/* Avatar Styles */
 .avatar {
   width: 150px; 
   height: 150px; 
   border-radius: 50%; 
-  border: 6px solid #007bff; 
+  border: 8px solid #F5D775; 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
   object-fit: cover; 
 }
 
-/* Main Heading (h1) Styles */
 h2 {
   margin: 0; 
   color: #333; 
@@ -141,7 +131,6 @@ h2 {
   display: inline-block; 
 }
 
-/* Figcaption Styles */
 figcaption {
   margin-top: 15px; 
   color: #333; 
@@ -155,74 +144,68 @@ figcaption {
 
 
 
-/* Title */
 .info-content .title {
-  color: #333; /* Darker color for readability */
-  font-size: 1.4em; /* Larger font size for emphasis */
-  font-weight: 400; /* Semi-bold weight for a sleek look */
-  margin: 8px 0; /* Adequate spacing around title */
-  font-family: 'Poppins', sans-serif; /* Modern font choice */
+  color: #333; 
+  font-size: 1.4em; 
+  font-weight: 400; 
+  margin: 8px 0;
+  font-family: 'Poppins', sans-serif; 
 }
 
-/* Button Container */
 .btn-container {
-  margin-top: 20px; /* Spacing above the buttons */
+  margin-top: 20px; 
 }
 
-/* Button Styles */
 .btn-color-2 {
-  background-color: #007bff; /* Vibrant blue for visibility */
-  color: #2c2b2b; /* White text for contrast */
-  padding: 12px 24px; /* Sufficient padding for a noticeable button */
-  border-radius: 25px; /* Rounded corners for a sleek look */
+  background-color: #AB9752; 
+  color: #2c2b2b; 
+  padding: 12px 24px; 
+  border-radius: 25px; 
   text-decoration: none;
-  font-size: 1em; /* Standard font size */
-  display: inline-block; /* Proper button alignment */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+  font-size: 0.8em; 
+  display: inline-block; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .btn-color-2:hover {
-  background-color: #0263cc; /* Darker blue on hover */
-  transform: translateY(-3px); /* Slight upward movement on hover */
-  box-shadow: 2px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  background-color: #C4AC5E; 
+  transform: translateY(-3px); 
+  box-shadow: 2px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Social Links */
 .social-list {
   display: flex;
-  justify-content: center; /* Center the social icons */
-  margin: 20px 0; /* Spacing above and below the icons */
+  justify-content: center; 
+  margin: 20px 0;
   padding: 0;
-  list-style: none; /* Remove default list styling */
+  list-style: none; 
 }
 
 .social-item {
-  margin: 0 15px; /* Spacing between social icons */
+  margin: 0 15px; 
 }
 
 .social-link {
-  color: #333; /* Dark color for icons */
-  font-size: 1.5em; /* Larger size for visibility */
-  transition: color 0.3s ease; /* Smooth color transition */
+  color: #AC9256; 
+  font-size: 1.5em; 
+  transition: color 0.3s ease; 
 }
 
 .social-link:hover {
-  color: #007bff; /* Color change on hover for interaction */
+  color: #ffcd45;
 }
 
-/* Separator */
 .separator {
-  margin: 20px 0; /* Spacing around the separator */
+  margin: 20px 0; 
   height: 1px;
-  background-color: #ddd; /* Light color for subtle separation */
+  background-color: #ddd; 
 }
 
-/* Contacts List */
 .contacts-list {
   list-style: none;
   padding: 0;
-  margin: 20px 0; /* Margin around contacts list */
+  margin: 20px 0; 
 }
 
 .contact-item {
@@ -231,14 +214,14 @@ figcaption {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 8px;
-  background: #f1f1f1; /* Light background for each contact item */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  background: #f1f1f1; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .icon-box {
   margin-right: 15px;
-  color: #007bff; /* Accent color for icons */
-  font-size: 1.5em; /* Larger icons for visibility */
+  color: #AC9256; 
+  font-size: 1.5em; 
 }
 
 .contact-info {
@@ -247,33 +230,31 @@ figcaption {
 
 .contact-title {
   font-size: 1em;
-  color: #007bff; /* Accent color for contact titles */
+  color: #7B683D;
   font-weight: 500;
 }
 
 .contact-link {
-  color: #333; /* Dark color for contact links */
+  color: #333333; 
   text-decoration: none;
   font-size: 0.9em;
 }
 
 .contact-link:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 .address {
-  color: #333; /* Dark color for address */
+  color: #333; 
   font-size: 0.9em;
 }
 
-/* Info More Section */
 .sidebar-info_more {
-  display: none; /* Hidden by default */
+  display: none; 
   margin-top: 20px;
 }
 
 
-/* Social Links */
 .social-list {
   list-style: none;
   padding: 0;
@@ -292,17 +273,16 @@ figcaption {
 }
 
 .social-link:hover {
-  color: #3498db; /* Change color on hover */
+  color: #6E611A; 
 }
 
-/* Show More Button */
 .info_more-btn {
-  background: #3498db; /* Bright background color */
-  color: #ecf0f1;
+  background: #8E8950; 
+  color: #ffffff;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
-  font-size: 1em;
+  font-size: 1.2em;
   cursor: pointer;
   display: block;
   margin: 20px auto;
@@ -310,17 +290,16 @@ figcaption {
 }
 
 .info_more-btn:hover {
-  background: #2980b9; /* Darker background color on hover */
+  background: #A6A05D; 
 }
 
-/* Additional Info Section */
 .sidebar-info_more {
-  display: none; /* Hidden by default */
+  display: none; 
   margin-top: 20px;
 }
 
 .separator {
-  border-top: 1px solid #34495e; /* Light separator line */
+  border-top: 1px solid #1f7cda; 
   margin: 20px 0;
 }
 
@@ -361,10 +340,8 @@ figcaption {
 }
 
 
-
-/* Main content */
 .main-content {
-  margin-left: 270px; /* Adjusted for better alignment */
+  margin-left: 270px; 
   padding: 40px;
   background-color: #fff;
   border-radius: 12px;
@@ -372,7 +349,6 @@ figcaption {
   overflow: hidden;
 }
 
-/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -399,34 +375,32 @@ figcaption {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Title Wrapper */
 .title-wrapper {
   display: flex;
   align-items: center;
-  gap: 10px; /* Adjust space between icon and text */
-  margin: 20px 0; /* Adjust spacing above and below */
-  text-align: center; /* Center the text within the wrapper */
+  gap: 10px; 
+  margin: 20px 0; 
+  text-align: center; 
 }
 
 .icon-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Adjust width as needed */
-  height: 40px; /* Adjust height as needed */
+  width: 40px; 
+  height: 40px; 
   border-radius: 50%;
-  background-color: #007BFF; /* Background color for the icon box */
-  color: white; /* Icon color */
-  font-size: 24px; /* Icon size */
+  background-color: #FBC84F; 
+  color: white; 
+  font-size: 24px; 
 }
 
 .h3 {
-  font-size: 1.5rem; /* Adjust font size as needed */
-  color: #333; /* Text color */
+  font-size: 1.5rem; 
+  color: #333; 
 }
 
 
-/* Article Sections */
 article {
   display: none;
 }
@@ -443,7 +417,6 @@ article.active {
   padding-bottom: 10px;
 }
 
-/* About section */
 .about-text {
   margin-bottom: 30px;
 }
@@ -476,7 +449,6 @@ article.active {
   flex: 1;
 }
 
-/* Achievements Section */
 .ACHIEVEMENTS {
   padding: 40px;
   background-color: #f9f9f9;
@@ -505,7 +477,7 @@ article.active {
 
 .clients-item {
   flex: 0 0 auto;
-  width: 200px; /* Adjust the width as needed */
+  width: 200px; 
 }
 
 .clients-item img {
@@ -522,9 +494,6 @@ article.active {
 }
 
 
-
-
-/* Custom Scrollbar Styles */
 .has-scrollbar::-webkit-scrollbar {
   width: 10px; 
 }
@@ -550,84 +519,70 @@ article.active {
 
   
 
-
-
-
-
-/* Main Navbar Style */
 .navbar {
-  background: #282c34; /* Dark background for contrast */
-  padding: 15px 30px; /* Padding for spacing */
-  border-radius: 8px; /* Rounded corners for a modern look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for a floating effect */
-  display: flex; /* Flexbox for layout */
-  justify-content: center; /* Center-align items */
+  background: #282c34; 
+  padding: 15px 30px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center; 
   align-items: center;
 }
 
-/* Navbar List Style */
 .navbar-list {
   display: flex;
-  justify-content: space-between; /* Space items evenly */
+  justify-content: space-between; 
   align-items: center;
-  list-style: none; /* Remove default list styling */
+  list-style: none; 
   padding: 0;
   margin: 0;
-  width: 100%; /* Full width to center items */
-  max-width: 1200px; /* Max width for larger screens */
+  width: 100%; 
+  max-width: 1200px; 
 }
 
-/* Navbar Item Style */
 .navbar-item {
-  margin: 0 15px; /* Margin for spacing between items */
+  margin: 0 15px; 
 }
 
-/* Navbar Link Style */
 .navbar-link {
-  color: #ffffff; /* White text for contrast */
-  font-size: 18px; /* Slightly larger text */
-  text-transform: uppercase; /* Uppercase text for emphasis */
-  text-decoration: none; /* Remove underline */
-  padding: 10px 20px; /* Padding around the text */
-  border-radius: 25px; /* Rounded buttons */
-  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
-  position: relative; /* For underline effect */
+  color: #ffffff; 
+  font-size: 18px; 
+  text-transform: uppercase;
+  text-decoration: none; 
+  padding: 10px 20px;
+  border-radius: 25px; 
+  transition: background 0.3s ease, color 0.3s ease; 
+  position: relative; 
 }
 
-/* Active Link Style */
 .navbar-link.active {
-  background: #61dafb; /* Light blue background for active link */
-  color: #282c34; /* Dark text color for contrast */
+  background: #61dafb; 
+  color: #282c34; 
 }
 
-/* Hover Effect */
 .navbar-link:hover {
-  background: rgba(255, 255, 255, 0.2); /* Light overlay effect on hover */
-  color: #61dafb; /* Light blue text color on hover */
+  background: rgba(255, 255, 255, 0.2); 
+  color: #61dafb; 
 }
 
-/* Underline Effect */
 .navbar-link::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -5px; /* Position the underline below the link */
+  bottom: -5px; 
   width: 100%;
   height: 3px;
-  background: #61dafb; /* Bright underline color */
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  background: #61dafb; 
+  opacity: 0;
+  transition: opacity 0.3s ease; 
 }
 
 .navbar-link:hover::after,
 .navbar-link.active::after {
-  opacity: 1; /* Show underline on hover and for active link */
+  opacity: 1; 
 }
 
 
-
-
-/* Responsive Sidebar */
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
@@ -647,10 +602,6 @@ article.active {
 }
 
 
-
-
-
-/* Basic styling for the navbar */
 .navbar {
   background-color: #333;
   color: #fff;
@@ -686,13 +637,12 @@ article.active {
   background-color: #555;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .navbar-list {
     flex-direction: column;
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
-    top: 60px; /* Adjust based on navbar height */
+    top: 60px; 
     left: 0;
     width: 100%;
     background-color: #333;
@@ -709,7 +659,7 @@ article.active {
 
   .navbar-link {
     font-size: 18px;
-    display: block; /* Ensure each item is on its own line */
+    display: block; 
   }
 
   .navbar-toggle {
@@ -726,13 +676,11 @@ article.active {
 
 @media (min-width: 769px) {
   .navbar-toggle {
-    display: none; /* Hide toggle button on larger screens */
+    display: none; 
   }
 }
 
 
-
-/* Timeline Styles */
 .timeline {
   margin-bottom: 30px;
   padding: 20px;
@@ -767,9 +715,9 @@ article.active {
   top: 20px;
   width: 24px;
   height: 24px;
-  background-color: #ff6f61; /* Bold color */
+  background-color: #ff6f61; 
   border-radius: 50%;
-  border: 4px solid #ffffff; /* White border for contrast */
+  border: 4px solid #ffffff; 
 }
 
 .h4.timeline-item-title {
@@ -1270,16 +1218,6 @@ figcaption {
 
 
 
-
-
-
-
-
-
-
-
-
-
 .communication-skills {
   max-width: 900px;
   margin: 0 auto;
@@ -1352,9 +1290,6 @@ figcaption {
 .odia {
   background-color: #f39649; 
 }
-
-
-
 
 
 
