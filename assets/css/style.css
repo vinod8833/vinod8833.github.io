@@ -202,57 +202,11 @@ figcaption {
   background-color: #ddd; 
 }
 
-.contacts-list {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0; 
-}
 
-.contact-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #f1f1f1; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
 
-.icon-box {
-  margin-right: 15px;
-  color: #AC9256; 
-  font-size: 1.5em; 
-}
 
-.contact-info {
-  text-align: left;
-}
 
-.contact-title {
-  font-size: 1em;
-  color: #7B683D;
-  font-weight: 500;
-}
 
-.contact-link {
-  color: #333333; 
-  text-decoration: none;
-  font-size: 0.9em;
-}
-
-.contact-link:hover {
-  text-decoration: underline; 
-}
-
-.address {
-  color: #333; 
-  font-size: 0.9em;
-}
-
-.sidebar-info_more {
-  display: none; 
-  margin-top: 20px;
-}
 
 
 .social-list {
@@ -343,7 +297,7 @@ figcaption {
 .main-content {
   margin-left: 270px; 
   padding: 40px;
-  background-color: #fff;
+  background-color: #ffedb0;
   border-radius: 12px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -383,17 +337,7 @@ figcaption {
   text-align: center; 
 }
 
-.icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px; 
-  height: 40px; 
-  border-radius: 50%;
-  background-color: #FBC84F; 
-  color: white; 
-  font-size: 24px; 
-}
+
 
 .h3 {
   font-size: 1.5rem; 
