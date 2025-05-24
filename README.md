@@ -34,17 +34,17 @@ MIT
 # vinod8833.github.io
 
 ``` bash
-    git status 
-    git add --all
-    git commit -m "add"
-    git push -u origin main
-
+git status 
+git add --all
+git commit -m "add"
+git push -u origin main
 ```
-    #or
+
 ```bash 
-    git push -f 
-    ```
+git push -f 
+```
 
 
-```https://web3forms.com/ 
+```bash
+https://web3forms.com/ 
 ```
