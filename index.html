@@ -2,1267 +2,390 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <title>Personal Portfolio</title>
-  <link rel="shortcut icon" href="./assets/images/Fire_Free_Logo-removebg-preview.png" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-
+  <meta name="description" content="K Vinod Kumar — Software Engineer & 3D Designer. Full-stack, QA, React, Django, Three.js. Portfolio, projects, certifications.">
+  <meta name="keywords" content="K Vinod Kumar, Software Engineer, Full-Stack, Django, React, Three.js, Portfolio">
+  <meta name="author" content="K Vinod Kumar">
+  <meta name="theme-color" content="#E8EEF4">
+  <title>KVK | Portfolio</title>
+  <link rel="icon" href="./assets/images/Fire_Free_Logo-removebg-preview.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/dev-portfolio.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 </head>
 <body>
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <div class="frame">
-            <img src="./assets/images/vinod_1 (3).jpg" alt="K Vinod Kumar" class="avatar">
-          </div>
-        </figure>
-        <h1>K Vinod Kumar</h1>
-        <div class="info-content">
-          <h5 class="titl5e">FULL-STACK DEVELOPER</h5>
-          <div class="btn-container">
-            <a class="btn btn-color-2" href="./assets/images/Resume.pdf">
-              <h3 class="title">Download CV</h3>            
-            </a>
-          </div>
-          
-          <!-- Social Links -->
-          <div class="separator"></div>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://www.facebook.com/kvinod.kumar.50115?mibextid=ZbWKwL" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://github.com/vinod8833" class="social-link">
-                <ion-icon name="logo-github"></ion-icon>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://api.whatsapp.com/send?phone=7606945133&text=" class="social-link">
-                <ion-icon name="logo-whatsapp"></ion-icon>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.instagram.com/vinod_8833?igsh=MXV0eHNiNm85em54Zg==" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.linkedin.com/in/k-vinod-kumar-686738266" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>    
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>    
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:vinodkr8833@gmail.com" >vinodkr8833@gmail.com</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+91-7606945133" >+91-7606945133</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-              <time datetime="2003-10-15">October 15, 2003</time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Berhampur, Odisha, India</address>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    
-    <!--
-      - #main-content
-    -->
-
-
-    <div class="main-content">
-
-      <!-- #NAVBAR -->
-      <nav class="navbar">
-        <button class="navbar-toggle">☰</button> <!-- Toggle Button for Mobile -->
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Project</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>          
-        </ul>
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        
-        <a href="https://leetcode.com/u/vinodkr8833/" class="coding-profile-button">Coding Profile</a>
-        <style>
-.coding-profile-button {
-  position: fixed; 
-  top: 50px; 
-  right: 20px; 
-  background-color: #ff7e5f; 
-  color: rgb(0, 0, 0); 
-  font-size: 1.1em; 
-  padding: 10px 20px; 
-  border-radius: 12px; 
-  text-decoration: none; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-}
-
-.coding-profile-button:hover {
-  background-color: #feb47b; 
-  transform: translateY(-3px); 
-}
-
-.coding-profile-button:focus {
-  outline: none; 
-  box-shadow: 0 0 0 2px rgba(255, 126, 95, 0.6);
-}
-</style>
-        <section class="about-text">
-          <p>
-            I am a passionate full-stack developer with hands-on experience in building web applications using technologies like Python, Django, JavaScript, and more. I recently completed a 1-month on-site internship at Techvolt Software, where I gained valuable skills in developing user-friendly applications.
-          </p>
-
-          <p>
-            With a focus on clean design and effective problem-solving, I aim to create seamless user experiences. Outside of work, I enjoy outdoor activities, traveling, and exploring new things.
-          </p>
-          <p>Feel free to explore my projects and get in touch for collaborations or ideas!</p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
-
-                <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality development of sites at the professional level.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
-              </div>
-            </li>
-        </section>
-        
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <!-- <ion-icon name="close-outline"></ion-icon> -->
-            </button>
-
-            <div class="modal-img-wrapper">
-            </div>
-
-            <div class="modal-content">
-              <div data-modal-text>
-                </div>
-
-            </div>
-
-          </section>
-
-        </div>
-        <!--
-          - ACHIEVEMENTS
-        -->
-
-        <section class="ACHIEVEMENTS">
-            
-          <h3 class="h3 ACHIEVEMENTS-title">ACHIEVEMENTS</h3>
-          <ul class="clients-list has-scrollbar">
-
-
-            <li class="clients-item">
-              <a href="./assets/images/techvolts.jpeg">
-                <img src="./assets/images/techvolts.jpeg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/techvoltsoftware.jpeg">
-                <img src="./assets/images/techvoltsoftware.jpeg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/gioogle_stydy_gam.jpeg">
-                <img src="./assets/images/gioogle_stydy_gam.jpeg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/GCSJ-Participant-CERT-23_page-0001.jpg">
-                <img src="./assets/images/GCSJ-Participant-CERT-23_page-0001.jpg" alt="client logo">
-              </a>
-            </li>
-            
-
-            <li class="clients-item">
-              <a href="./assets/images/Demystifying Networking_page-0001.jpg">
-                <img src="./assets/images/Demystifying Networking_page-0001.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/android operating system .png">
-                <img src="./assets/images/android operating system .png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/1725550753945 (1).jpg">
-                <img src="./assets/images/1725550753945 (1).jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/Share TEACHNOOK 0001.jpg">
-                <img src="./assets/images/Share TEACHNOOK 0001.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/Teachnook COURSE Completion Certificate _.jpg">
-                <img src="./assets/images/Teachnook COURSE Completion Certificate _.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/202112303_page-0001.jpg">
-                <img src="./assets/images/202112303_page-0001.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/React-Workshop-58_.jpg">
-                <img src="./assets/images/React-Workshop-58_.jpg" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="./assets/images/1703580567225.jpeg">
-                <img src="./assets/images/1703580567225.jpeg" alt="client logo">
-              </a>
-            </li>          
-          </ul>         
-        </section>
-      </article>
-
-
-
-
-
-      
-        <!-- - #RESUME -->
-     
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">NIST University</h4>
-
-              <span>2021 — present</span>
-
-              <p class="timeline-text">
-                Bachelor of Technology (Information Technology)
-                <br>cgpa: 7.28
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">City High School, Berhampur
-                </h4>
-
-              <span>(2019-2021)
-              </span>
-
-              <p class="timeline-text">
-                Class XI & XII  (MPC, CHSE)<br>
-                Percentage: 66.4
-              </p>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sri Karunakar Nodal Bidyapitha ,Patrapur
-                </h4>
-
-              <span>(2018-2019)
-              </span>
-
-              <p class="timeline-text">
-                Class X  (CHSE)<br>
-                Percentage: 64.2
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Techvolt Software Pvt Ltd, Coimbatore</h4>
-              <span>July 2024 – August 2024 (1 Month, On-site)</span><br><br>
-              <p class="timeline-text">
-                Completed a one-month training and internship program focused on 
-                <b><u>Full Stack Development using Django and Python</u></b>. Gained hands-on experience in building, deploying, and managing web applications.
-              </p> 
-              <p class="timeline-text">
-                Worked on both front-end (HTML, CSS, JavaScript) and back-end (Django framework) development.
-              </p>
-              <p class="timeline-text">
-                Learned to collaborate with the development team and follow project workflows in a professional environment.
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">NSS Volunteer, NIST University, Brahmapur, Odisha</h4>
-              <span>July 2022 – Present</span><br><br>
-              <p class="timeline-text">
-                Collaborated with a team of volunteers in the 
-                <b><u>National Service Scheme (NSS)</u></b> to contribute to social service projects. 
-                Participated in organizing events and initiatives aimed at community development and environmental awareness.
-              </p>
-            </li>
-          
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Certification and Online Courses, NIST University, Brahmapur, Odisha</h4>
-              <span>July 2024 – August 2024</span><br><br>
-              <p class="timeline-text">
-                Completed certification in <u><b>Data Structure using C and Full Stack Development</b></u>. Gained theoretical and practical knowledge to enhance programming and project management skills.
-              </p>
-            </li>
-          
-          </ol>
-          
-        </section>
-
-
-
-        <div class="container">
-          
-          <!-- Hobbies Section -->
-          <div class="section hobbies">
-              <h3>Hobbies</h3>
-              <div class="hobby coding">
-                  <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                  <div class="text">
-                      <p>Coding</p>
-                  </div>
-              </div>
-              <div class="hobby travel">
-                  <div class="icon"><i class="fas fa-plane"></i></div>
-                  <div class="text">
-                      <p>Travel</p>
-                  </div>
-              </div>
-              <div class="hobby coffee">
-                  <div class="icon"><i class="fas fa-coffee"></i></div>
-                  <div class="text">
-                      <p>Coffee</p>
-                  </div>
-              </div>
-              <div class="hobby nature">
-                  <div class="icon"><i class="fas fa-tree"></i></div>
-                  <div class="text">
-                      <p>Nature</p>
-                  </div>
-              </div>
-          </div>
-  
-          <!-- Interests Section -->
-          <div class="section interests">
-              <h3>Interests</h3>
-              <div class="hobby movies">
-                  <div class="icon"><i class="fas fa-film"></i></div>
-                  <div class="text">
-                      <p>Movies</p>
-                  </div>
-              </div>
-              <div class="hobby music">
-                  <div class="icon"><i class="fas fa-music"></i></div>
-                  <div class="text">
-                      <p>Music</p>
-                  </div>
-              </div>
-              <div class="hobby games">
-                  <div class="icon"><i class="fas fa-gamepad"></i></div>
-                  <div class="text">
-                      <p>Games</p>
-                  </div>
-              </div>
-
-
-
-              <section class="communication-skills">
-                <h2 class="section-title">Communication Languages</h2>
-                <div class="languages">
-                    <div class="language-card english">
-                        <h3>English</h3>
-                        <p>Fluent in speaking, reading, and writing.</p>
-                    </div>
-                    <div class="language-card telugu">
-                        <h3>Telugu</h3>
-                        <p>Fluent in speaking and reading.</p>
-                    </div>
-                    <div class="language-card hindi">
-                        <h3>Hindi</h3>
-                        <p>Fluent in speaking, reading, and writing.</p>
-                    </div>
-                    <div class="language-card odia">
-                        <h3>Odia</h3>
-                        <p>Fluent in speaking, reading, and writing.</p>
-                    </div>
-                </div>
-            </section>
-
-
-          </div>
-      </div>
-
-
-       
-        <section class="custom-skill-section">
-          <h3 class="custom-skills-title">My Skills</h3>
-          <ul class="custom-skills-list">
-            <ul class="custom-clients-list custom-has-scrollbar">
-              <li class="custom-clients-item">
-                <a href="./assets/images/html_original.png">
-                  <img src="./assets/images/html_original.png" alt="HTML logo">
-                </a>
-              </li>
-
-                   
-              <li class="custom-clients-item">
-                <a href="./assets/images/css_plain_.png">
-                      <img src="./assets/images/css_plain_.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/file_type_js.png">
-                      <img src="./assets/images/file_type_js.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/node-js-736399_1280.png">
-                      <img src="./assets/images/node-js-736399_1280.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/react_original.png">
-                      <img src="./assets/images/react_original.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/django_plain.png">
-                      <img src="./assets/images/django_plain.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/python.png">
-                      <img src="./assets/images/python.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/file_type_sql_130152.png">
-                      <img src="./assets/images/file_type_sql_130152.png" alt="client logo">
-                    </a>
-                  </li>
-
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/C++_Logo.png">
-                      <img src="./assets/images/C++_Logo.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/flask.jpg">
-                      <img src="./assets/images/flask.jpg" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/mongodb-icon-1.svg">
-                      <img src="./assets/images/mongodb-icon-1.svg" alt="client logo">
-                    </a>
-                  </li>
-
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/git.png">
-                      <img src="./assets/images/git.png" alt="client logo">
-                    </a>
-                  </li>
-
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/github.jpeg">
-                      <img src="./assets/images/github.jpeg" alt="client logo">
-                    </a>
-                  </li>
-
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/android.png">
-                      <img src="./assets/images/android.png" alt="client logo">
-                    </a>
-                  </li>     
-                  
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/aws.png">
-                      <img src="./assets/images/aws.png" alt="client logo">
-                    </a>
-                  </li> 
-
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/google-cloud.png">
-                      <img src="./assets/images/google-cloud.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/figma_logo_icon_170157.png">
-                      <img src="./assets/images/figma_logo_icon_170157.png" alt="client logo">
-                    </a>
-                  </li>
-      
-                  <li class="custom-clients-item">
-                    <a href="./assets/images/postman_.png">
-                      <img src="./assets/images/postman_.png" alt="client logo">
-                    </a>
-                  </li>
-      
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
-        - #project
-      -->
-
-      <article class="portfolio" data-page="project">
-
-        <header>
-          <h2 class="h2 article-title">Project</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>machine learning</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-              <li class="select-item">
-                <button data-select-item>machine learning</button>
-              </li>
-
-
-            </ul>
-
-          </div>
-
-<ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/html_project/tree/main/Google%20Fiber%20Loader">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/web6.png" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Google Fiber Loader</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/html_project/tree/main/Dynamic%20Island%20Iphone">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/web5.png" alt="Dynamic Island Iphone  " loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Dynamic Island Iphone</h3>
-            
-                <p class="project-category">web development</p>
-            
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/tic-tac-toe-game">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/tic_tac_toe_game.png" alt="tic_tac_toe_game.png  " loading="lazy">
-                </figure>            
-                <h3 class="project-title">tic_tac_toe_game</h3>            
-                <p class="project-category">web app Using React,HTML,css,js</p>
-            
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/html_project/tree/main/Dynamic%20Island%20Iphone">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/Quiz.png" alt="Simple Quiz  " loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Simple Quiz Web</h3>
-            
-                <p class="project-category">web development</p>
-            
-              </a>
-            </li>
-            
-
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/html_project/tree/main/Dark%20%26%20Light%20-%20Calculator">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/web1.png" alt="Dark & Light - Calculator" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Dark & Light - Calculator</h3>
-            
-                <p class="project-category">web development</p>
-            
-              </a>
-            </li>
-            
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/html_project/tree/main/Dynamic%20Calendar">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/web2.png" alt="Dynamic Calendar" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Dynamic Calendar</h3>
-            
-                <p class="project-category">web development</p>
-            
-              </a>
-            </li>
-            
-            
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/vinod8833/html_project/tree/main/Glowing%20Login%20Form">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/Pasted image 1.png" alt="Animated Login" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Animated Login</h3>
-            
-                <p class="project-category">web development</p>
-            
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.figma.com/file/3pSMl7H8U4fDa6ijN9alzK/Untitled?type=design&node-id=0%3A1&mode=design&t=1c2BnBjkWJxRyGOz-1">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ux1.png" alt="Food App" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Food App Home Page</h3>
-
-                <p class="project-category">UX/UI design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.figma.com/file/YLlW3spll71nqYNSUffb37/food-scooter?type=design&mode=design&t=1c2BnBjkWJxRyGOz-1">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ux2.png" alt="food scooter app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">food scooter app</h3>  
-
-                <p class="project-category">UX/UI design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.figma.com/file/Cen1WyvTlWUsBaxOyG6qRh/Amazon-Figma-Clone?type=design&mode=design&t=1c2BnBjkWJxRyGOz-1">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/ux3.png" alt="Amazon App Clone" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Amazon App Clone</h3>  
-
-                <p class="project-category">UX/UI design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.figma.com/proto/gpJNb4bSlHNUxD0Ewkbzdh/Untitled?t=Mv5B7H24utNFPbnJ-1">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/1-1.png" alt="e-commerce website design" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">e-commerce website design</h3>  
-
-                <p class="project-category">UX/UI design</p>
-
-              </a>
-            </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="https://www.figma.com/proto/RWZ8TN9NIMyX8dpDv4sWRF/Untitled?node-id=1-2">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/2-1.png" alt="Amazon App Clone" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Robogenius Web Page Design</h3>  
-
-                <p class="project-category">UX/UI design</p>
-
-              </a>
-            </li>
-
-<!--- #applications_project!-->
-            
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/vinod8833/react_todo-app">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Screenshot from 2024-03-26 22-54-00.png" alt="Todo app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Todo app</h3>
-
-                <p class="project-category">Using React for Web.</p>
-
-              </a>  
-
-
-              <li class="project-item  active" data-filter-item data-category="applications">
-                <a href="https://github.com/vinod8833/Django_Weather_App/tree/main">
-                    <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                      <img src="./assets/images/weatherapp.png" alt="Weather App" loading="lazy">
-                  </figure>
-                    <h3 class="project-title">Weather App</h3>  
-                  <p class="project-category">Devloped with django application</p>  
-                </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/vinod8833/Wheels_on_Meals_App">
-                  <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                    <img src="./assets/images/1723295072704.jpeg" alt="Weather App" loading="lazy">
-                </figure>
-                  <h3 class="project-title">wheels on meals food app</h3>  
-                <p class="project-category">Devloped with Django Application</p>  
-              </a>
-          </li>
-
-
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/vinod8833/Django_MusicPlayer">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/musicapp.png" alt="Todo app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Djaogo_MusicPlayer_Applications</h3>
-
-                <p class="project-category">using django framework in python</p>
-
-              </a>
-            </li>
-            <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/vinod8833/django-todoapp">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/Django-todo.png" alt="Todo app" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Django_Todo_app</h3>
-
-                <p class="project-category">Using django framework in python</p>
-
-              </a>
-            </li>
-            
-<!--machine learning!-->
-
-
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://colab.research.google.com/drive/1V46CPpnkL7y4XZ2sgjV9EsUUxCsNBy-u">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/0_XMbwmj-4r80bBuIg.jpg" alt="Predicting House Prices" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Predicting House Prices</h3>
-
-                <p class="project-category">Using ML.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://colab.research.google.com/drive/1Nd0AwJHWrEfaAHpWhdL3ta4Ie1umKQV-">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/dataset-card.png" alt="Diabetes Prediction" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Diabetes Prediction</h3>
-
-                <p class="project-category">Using modules.</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="machine learning">
-              <a href="https://colab.research.google.com/drive/1Nd0AwJHWrEfaAHpWhdL3ta4Ie1umKQV-">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/maxresdefault.jpg" alt="Wine quality prediction" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Wine quality prediction</h3>
-
-                <p class="project-category">Using modules.</p>
-
-              </a>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.9236791373683!2d84.74332340977163!3d19.198535548041246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3d43650f924b4f%3A0x821828cd629bb075!2sNIST%20University!5e0!3m2!1sen!2sin!4v1711223049035!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <canvas id="code-rain" class="code-rain-canvas" aria-hidden="true"></canvas>
+  <div class="bg-veil" aria-hidden="true"></div>
+
+  <header class="header" role="banner">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#hero" class="brand"><span>(KVK)</span></a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-labelledby="hero-h1">
+      <div class="container hero-grid">
+        <div class="hero-media reveal">
+          <figure class="hero-photo-card">
+            <img src="./assets/images/vinod_1 (3).jpg" alt="K Vinod Kumar" width="200" height="200" loading="eager" decoding="async">
+            <figcaption class="hero-status"><i class="fa-solid fa-circle"></i> Open to work</figcaption>
           </figure>
-        </section>
+          <div class="hero-3d-panel" id="hero-3d-box">
+            <canvas id="hero-3d" aria-label="3D developer scene"></canvas>
+            <span class="hero-3d-label"><i class="fa-solid fa-cube"></i> <a href="#model-viewer">3D Viewer</a></span>
+          </div>
+        </div>
 
-        <section class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
-          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
-            <div class="input-wrapper">
-              <input type="hidden" name="access_key" value="de537e3a-562a-4456-995c-d350faf73fc7">
-
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-              <input type="text" name="subject" class="form-input" placeholder="Subject" required data-form-input>
+        <div class="hero-content reveal">
+          <p class="hero-kicker">PATRAPUR, Odisha</p>
+          <h1 id="hero-h1">K Vinod Kumar</h1>
+          <p class="hero-role">Software Engineer <span class="sep">|</span> QA Specialist <span class="sep">|</span> 3D Designer</p>
+          <p class="hero-desc">Full-stack apps with React &amp; Django, test automation with Selenium &amp; Cypress, and interactive 3D with Three.js — built for real teams and real users.</p>
+          <ul class="hero-tags" aria-label="Core skills">
+            <li>React</li><li>Django</li><li>Python</li><li>Selenium</li><li>Three.js</li><li>Figma</li><li>Playwright</li>
+          </ul>
+          <div class="hero-actions">
+            <a href="./assets/images/Resume.pdf" class="btn btn-primary" download="K_Vinod_Kumar_Resume.pdf">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+            <a href="#projects" class="btn btn-outline">Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact</a>
+          </div>
+          <div class="social">
+              <a href="https://vinod8833.github.io" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+              <a href="https://github.com/vinod8833" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/k-vinod-kumar-686738266" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             </div>
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+          <dl class="hero-stats">
+            <div><dt>Projects</dt><dd data-counter="22">0</dd></div>
+            <div><dt>Test cases</dt><dd data-counter="45">0</dd></div>
+            <div><dt>Certificates</dt><dd data-counter="10">0</dd></div>
+            <div><dt>CGPA</dt><dd>7.48</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFILE -->
+    <section id="profile" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">01</span><h2>Profile Summary</h2></header>
+        <div class="two-col reveal">
+          <div class="glass pad prose">
+            <p>Motivated <strong>B.Tech Information Technology</strong> graduate from NIST University, Odisha, with experience in <strong>full-stack web development</strong> (HTML, CSS, JavaScript, React, Django, Python) and <strong>QA automation</strong> (Selenium, Cypress, manual &amp; regression testing).</p>
+            <p>Internships at <strong>Techvolt Software</strong> and <strong>Yuvro Software</strong> — 45+ test cases, ~30% bug reduction, and production-ready delivery. 22+ projects across web apps, QA automation, UI/UX, and machine learning.</p>
+            <p>Seeking a software developer role to ship clean, tested, recruiter-ready applications.</p>
+            <a href="./assets/images/Resume.pdf" class="btn btn-primary" download="K_Vinod_Kumar_Resume.pdf"><i class="fa-solid fa-download"></i> Download Resume (PDF)</a>
+          </div>
+          <aside class="glass pad links-card">
+            <h3>Professional Links</h3>
+            <ul class="link-list">
+              <li><i class="fa-solid fa-globe"></i><a href="https://vinod8833.github.io" target="_blank" rel="noopener">vinod8833.github.io</a></li>
+              <li><i class="fa-brands fa-github"></i><a href="https://github.com/vinod8833" target="_blank" rel="noopener">github.com/vinod8833</a></li>
+              <li><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/k-vinod-kumar-686738266" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:vinodkr8833@gmail.com">vinodkr8833@gmail.com</a></li>
+              <li><i class="fa-solid fa-phone"></i><a href="tel:+917606945133">+91 7606945133 | +918337945133</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">02</span><h2>Technical Skills</h2></header>
+        <div class="tags-wrap reveal glass pad">
+          <span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>Python</span><span>Java</span><span>C</span><span>Blender</span>
+          <span>Django</span><span>Node.js</span><span>Three.js</span><span>HTML/CSS</span><span>Selenium</span><span>Playwright</span><span>Cypress</span>
+          <span>Figma</span><span>Git</span><span>SQL</span><span>Machine Learning</span><span>Docker</span><span>Kubernetes</span>
+          <span>API Testing</span><span>Performance Testing</span><span>Security Testing</span><span>Accessibility Testing</span>
+          <span>Test Automation</span><span>Test Planning</span><span>Test Execution</span><span>Test Reporting</span><span>Test Management</span>
+        </div>
+        <div class="glass pad skill-bars reveal" data-skill-bars>
+          <div class="bar-row"><label>React / Frontend</label><div class="track"><div class="fill" data-level="90"></div></div><span>90%</span></div>
+          <div class="bar-row"><label>Django / Backend</label><div class="track"><div class="fill" data-level="85"></div></div><span>85%</span></div>
+          <div class="bar-row"><label>QA Automation</label><div class="track"><div class="fill" data-level="88"></div></div><span>88%</span></div>
+          <div class="bar-row"><label>Three.js / 3D</label><div class="track"><div class="fill" data-level="78"></div></div><span>78%</span></div>
+          <div class="bar-row"><label>Figma / UI-UX</label><div class="track"><div class="fill" data-level="82"></div></div><span>82%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">03</span><h2>Professional Experience</h2></header>
+        <div class="exp-timeline reveal">
+          <article class="exp-card">
+            <div class="exp-logo">
+              <img src="./assets/images/Yuvro Software Pvt. Ltd.LOGO.jpeg" alt="Yuvro Software Pvt. Ltd. logo" width="60" height="60" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+              <span class="exp-logo-fallback" hidden aria-hidden="true">YS</span>
+            </div>
+            <div class="exp-body">
+              <span class="exp-date">Nov 2025 – Feb 2026</span>
+              <h3>Software Engineering Intern</h3>
+              <p class="exp-org">Yuvro Software Pvt. Ltd.</p>
+              <ul>
+                <li>Development, testing, debugging &amp; deployment support</li>
+                <li>Application enhancement &amp; team collaboration</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-logo">
+              <img src="./assets/images/Techvolt Software Pvt Ltd, CoimbatoreLOGO.jpg" alt="Techvolt Software logo" width="60" height="60" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+              <span class="exp-logo-fallback" hidden aria-hidden="true">TV</span>
+            </div>
+            <div class="exp-body">
+              <span class="exp-date">Jul 2024 – Aug 2024</span>
+              <h3>Full-Stack Developer &amp; QA Intern</h3>
+              <p class="exp-org">Techvolt Software Pvt Ltd, Coimbatore</p>
+              <ul>
+                <li>45+ test cases; ~30% bug reduction</li>
+                <li>Django, REST APIs, Selenium regression tests</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="exp-card">
+            <div class="exp-logo">
+              <img src="./assets/images/NSS LOGO.png" alt="NSS logo" width="60" height="60" loading="lazy" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+              <span class="exp-logo-fallback" hidden aria-hidden="true">NSS</span>
+            </div>
+            <div class="exp-body">
+              <span class="exp-date">Jul 2022 – Present</span>
+              <h3>NSS Volunteer Lead</h3>
+              <p class="exp-org">NIST University, Berhampur</p>
+              <ul>
+                <li>200+ volunteer hours · 10+ community events</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">04</span><h2>Projects</h2></header>
+        <div class="filters reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="f-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="f-btn" data-filter="web development">Web Dev</button>
+          <button type="button" class="f-btn" data-filter="applications">Apps</button>
+          <button type="button" class="f-btn" data-filter="web design">Design</button>
+          <button type="button" class="f-btn" data-filter="machine learning">ML</button>
+          <button type="button" class="f-btn" data-filter="qa automation">QA Automation</button>
+        </div>
+        <div class="proj-grid" id="proj-grid"></div>
+      </div>
+    </section>
+
+    <!-- 3D MODEL VIEWER -->
+    <section id="model-viewer" class="section">
+      <div class="container">
+        <header class="sec-head reveal">
+          <span class="sec-tag">3D</span>
+          <h2>Interactive 3D Viewer</h2>
+          <p class="sec-sub">Procedural Three.js geometry — no external model files</p>
+        </header>
+        <div class="viewer-wrap glass reveal" id="viewer-wrap">
+          <canvas id="portfolio-3d" aria-label="Interactive 3D model viewer"></canvas>
+          <div id="viewer-fallback" class="viewer-fallback" hidden>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <p>WebGL is not available on this device. Try a modern browser with hardware acceleration enabled.</p>
+          </div>
+          <p class="viewer-hint"><i class="fa-solid fa-hand-pointer"></i> Drag to rotate · Pinch or scroll to zoom · Auto-rotates when idle</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">05</span><h2>Education</h2></header>
+        <div class="edu-grid reveal">
+          <article class="glass edu">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>B.Tech in Information Technology</h3>
+            <p>NIST University, Odisha</p>
+            <p class="years">2021 – 2025</p>
+            <span class="score">CGPA: 7.48 / 10</span>
+          </article>
+          <article class="glass edu">
+            <i class="fa-solid fa-book"></i>
+            <h3>Higher Secondary (+2)</h3>
+            <p>CHSE Odisha</p>
+            <p class="years">2019-2021</p>
+            <span class="score">Percentage: 66.17%</span>
+          </article>
+          <article class="glass edu">
+            <i class="fa-solid fa-school"></i>
+            <h3>Matriculation (10th)</h3>
+            <p>BSE Odisha</p>
+            <p class="years">2019</p>
+            <span class="score">Percentage: 64.83%</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section section-alt">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">06</span><h2>Achievements</h2></header>
+        <div class="ach-stats reveal">
+          <div class="glass ach"><strong data-counter="22">0</strong><span>Production Apps &amp; Projects</span></div>
+          <div class="glass ach"><strong data-counter="200">0</strong><span>Test Cases Written</span></div>
+          <div class="glass ach"><strong data-counter="10">0</strong><span>Certifications</span></div>
+          <div class="glass ach"><strong data-counter="3">0</strong><span>Internships</span></div>
+        </div>
+        <ul class="ach-list reveal glass pad">
+          <li><i class="fa-solid fa-check"></i> Shipped 22+ web, QA, ML, and Django applications</li>
+          <li><i class="fa-solid fa-check"></i> Reduced production bugs ~30% at Techvolt</li>
+          <li><i class="fa-solid fa-check"></i> Interactive 3D portfolio experiences with Three.js</li>
+          <li><i class="fa-solid fa-check"></i> Open source contributor — GitHub portfolio</li>
+          <li><i class="fa-solid fa-check"></i> React Workshop, Networking &amp; Full Stack certifications</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">07</span><h2>Certifications</h2>
+          <p class="sec-sub">Click to view · Download on each card</p>
+        </header>
+        <div class="cert-grid" id="cert-grid"></div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES -->
+    <section id="languages" class="section section-alt">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">08</span><h2>Languages</h2></header>
+        <div class="lang-grid reveal">
+          <article class="glass lang-card">
+            <h3><i class="fa-solid fa-language"></i> English</h3>
+            <p>Fluent in speaking, reading, and writing.</p>
+          </article>
+          <article class="glass lang-card">
+            <h3><i class="fa-solid fa-language"></i> Telugu</h3>
+            <p>Native language</p>
+          </article>
+          <article class="glass lang-card">
+            <h3><i class="fa-solid fa-language"></i> Hindi</h3>
+            <p>Fluent in speaking, reading, and writing.</p>
+          </article>
+          <article class="glass lang-card">
+            <h3><i class="fa-solid fa-language"></i> Odia</h3>
+            <p>Fluent in speaking, reading, and writing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOBBIES & INTERESTS -->
+    <section id="interests" class="section">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">09</span><h2>Hobbies &amp; Interests</h2></header>
+
+        <div class="life-block reveal">
+          <h3 class="life-title"><i class="fa-solid fa-heart"></i> Hobbies</h3>
+          <div class="interest-grid">
+            <div class="glass int"><i class="fa-solid fa-code"></i><span>Coding</span></div>
+            <div class="glass int"><i class="fa-solid fa-plane"></i><span>Travel</span></div>
+            <div class="glass int"><i class="fa-solid fa-mug-hot"></i><span>Coffee</span></div>
+            <div class="glass int"><i class="fa-solid fa-leaf"></i><span>Nature</span></div>
+          </div>
+        </div>
+
+        <div class="life-block reveal">
+          <h3 class="life-title"><i class="fa-solid fa-star"></i> Interests</h3>
+          <div class="interest-grid">
+            <div class="glass int"><i class="fa-solid fa-film"></i><span>Movies</span></div>
+            <div class="glass int"><i class="fa-solid fa-music"></i><span>Music</span></div>
+            <div class="glass int"><i class="fa-solid fa-gamepad"></i><span>Games</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt contact-sec">
+      <div class="container">
+        <header class="sec-head reveal"><span class="sec-tag">10</span><h2>Contact Information</h2></header>
+        <div class="contact-grid reveal">
+          <div class="glass pad">
+            <p>Ready for software engineering opportunities.</p>
+            <div class="social">
+              <a href="https://vinod8833.github.io" target="_blank" rel="noopener" aria-label="Portfolio"><i class="fa-solid fa-globe"></i></a>
+              <a href="https://github.com/vinod8833" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/k-vinod-kumar-686738266" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <a href="./assets/images/Resume.pdf" class="btn btn-primary btn-block" download="K_Vinod_Kumar_Resume.pdf">Download Resume</a>
+          </div>
+          <form class="glass pad contact-form" id="contact-form" novalidate>
+            <input type="hidden" name="access_key" value="de537e3a-562a-4456-995c-d350faf73fc7">
+            <input type="hidden" name="subject" value="Portfolio — K Vinod Kumar">
+            <div class="float-f" data-field="name">
+              <input id="fn" name="name" type="text" placeholder=" " autocomplete="name" aria-describedby="fn-err">
+              <label for="fn">Name</label>
+              <span class="field-error" id="fn-err" role="alert"></span>
+            </div>
+            <div class="float-f" data-field="email">
+              <input id="fe" name="email" type="email" placeholder=" " autocomplete="email" aria-describedby="fe-err">
+              <label for="fe">Email</label>
+              <span class="field-error" id="fe-err" role="alert"></span>
+            </div>
+            <div class="float-f" data-field="message">
+              <textarea id="fm" name="message" rows="4" placeholder=" " aria-describedby="fm-err"></textarea>
+              <label for="fm">Message</label>
+              <span class="field-error" id="fm-err" role="alert"></span>
+            </div>
+            <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit">Send Message</button>
           </form>
-        </section>
-        
-        
-      </article>
-    </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="footer"><div class="container"><p>&copy; <span id="year"></span> KVK · Software Engineer &amp; 3D Designer</p></div></footer>
+
+  <div class="modal" id="cert-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-inner glass">
+      <button type="button" class="modal-x" id="cert-x" aria-label="Close">&times;</button>
+      <h3 id="cert-h"></h3>
+      <p id="cert-p"></p>
+      <img id="cert-img" src="" alt="">
+      <a href="#" id="cert-dl" class="btn btn-primary btn-sm" download>Download</a>
     </div>
-  </main>
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+  </div>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <!-- mail -->
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('[data-filter-btn]');
-    const projects = document.querySelectorAll('[data-filter-item]');
-  
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove 'active' class from all filter buttons
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
-        
-        const filterValue = button.textContent.trim().toLowerCase();
-        
-        // Show or hide projects based on the filter value
-        projects.forEach(project => {
-          const category = project.getAttribute('data-category').toLowerCase();
-          if (filterValue === 'all' || filterValue === category) {
-            project.style.display = 'block';
-          } else {
-            project.style.display = 'none';
-          }
-        });
-      });
-    });
-  });
-  
-
-
-  document.addEventListener('DOMContentLoaded', function () {
-    const sidebarBtn = document.querySelector('[data-sidebar-btn]');
-    const sidebarInfoMore = document.querySelector('.sidebar-info_more');
-  
-    sidebarBtn.addEventListener('click', function () {
-      if (sidebarInfoMore.style.display === 'block') {
-        sidebarInfoMore.style.display = 'none';
-        sidebarBtn.innerHTML = `<span>Show Contacts</span><ion-icon name="chevron-down"></ion-icon>`;
-      } else {
-        sidebarInfoMore.style.display = 'block';
-        sidebarBtn.innerHTML = `<span>Hide Contacts</span><ion-icon name="chevron-up"></ion-icon>`;
-      }
-    });
-  });
-
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const toggleButton = document.querySelector('.navbar-toggle');
-    const navbarList = document.querySelector('.navbar-list');
-    const navbarLinks = document.querySelectorAll('.navbar-link');
-  
-    // Toggle navbar list visibility for mobile view
-    toggleButton.addEventListener('click', () => {
-      navbarList.classList.toggle('active');
-      if (navbarList.classList.contains('active')) {
-        navbarLinks.forEach(btn => {
-          btn.style.display = 'inline'; // Show all buttons
-        });
-      }
-    });
-  
-    // Handle button clicks
-    navbarLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        // In mobile view, hide other buttons and show only the clicked one
-        if (window.innerWidth <= 768) { // Adjust this value as per your design
-          navbarLinks.forEach(btn => {
-            btn.style.display = 'none'; // Hide all buttons
-          });
-          link.style.display = 'inline'; // Show only the clicked button
-          navbarList.classList.remove('active'); // Hide the navbar list
-        }
-      });
-    });
-  
-    // Ensure that the navbar is reset on window resize (for responsive behavior)
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) { // Adjust this value as per your design
-        navbarLinks.forEach(btn => {
-          btn.style.display = 'inline'; // Show all buttons on desktop
-        });
-        navbarList.classList.remove('active'); // Always show navbar list on desktop
-      } else {
-        navbarList.classList.remove('active'); // Ensure list is hidden initially on mobile
-      }
-    });
-  });
-</script>
+  <script src="./assets/js/dev-portfolio.js" defer></script>
 </body>
 </html>
